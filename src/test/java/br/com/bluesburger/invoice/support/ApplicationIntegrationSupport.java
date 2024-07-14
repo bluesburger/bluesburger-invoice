@@ -11,10 +11,17 @@ import br.com.bluesburger.invoice.BluesBurguerInvoiceApplication;
 @SpringBootTest(
 		classes = { BluesBurguerInvoiceApplication.class },
 		properties = { 
+				"cloud.aws.credentials.access-key=AKIAIOSFODNN7EXAMPLE",
+				"cloud.aws.credentials.secret-key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",
 				"spring.main.allow-bean-definition-overriding=true",
 				"spring.cloud.bus.enabled=false",
 				"spring.cloud.consul.enabled=false", 
-				"spring.cloud.consul.discovery.enabled=false"
+				"spring.cloud.consul.discovery.enabled=false",
+				"cloud.aws.region.use-default-aws-region-chain=true",
+				"cloud.aws.stack.auto=false",
+				"cloud.aws.region.auto=false",
+				"cloud.aws.stack=false",
+				"cloud.aws.sqs.listener.auto-startup=false"
 		},
 		webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT
 )

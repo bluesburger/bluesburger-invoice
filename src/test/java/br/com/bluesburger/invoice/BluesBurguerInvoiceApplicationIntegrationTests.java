@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import br.com.bluesburger.invoice.support.ApplicationIntegrationSupport;
 
-class BluesBurguerOrderApplicationIntegrationTests extends ApplicationIntegrationSupport {
+class BluesBurguerInvoiceApplicationIntegrationTests extends ApplicationIntegrationSupport {
 
 	@Test
 	void contextLoad() {
