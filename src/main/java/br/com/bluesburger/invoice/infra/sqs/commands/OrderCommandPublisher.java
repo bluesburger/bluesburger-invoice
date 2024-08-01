@@ -2,7 +2,6 @@ package br.com.bluesburger.invoice.infra.sqs.commands;
 
 import java.util.Optional;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.amazonaws.services.sqs.AmazonSQS;
@@ -20,11 +19,9 @@ public abstract class OrderCommandPublisher<T extends OrderCommand> implements I
 
 	private final String queueName;
 	
-	@Autowired
-    private AmazonSQS amazonSQS;
+	private final AmazonSQS amazonSQS;
 	
-	@Autowired
-	private SqsQueueSupport<T> sqsQueueSupport;
+	private final SqsQueueSupport<T> sqsQueueSupport;
 
     @Override
     public Optional<String> publish(T command) {
