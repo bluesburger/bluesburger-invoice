@@ -1,4 +1,4 @@
-package br.com.bluesburger.invoice.application.dto.order;
+package br.com.bluesburger.invoice.application.dto;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility;

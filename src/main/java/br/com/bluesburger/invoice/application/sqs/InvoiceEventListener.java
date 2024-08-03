@@ -7,7 +7,7 @@ import org.springframework.cloud.aws.messaging.listener.annotation.SqsListener;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Service;
 
-import br.com.bluesburger.invoice.application.dto.order.OrderRequest;
+import br.com.bluesburger.invoice.application.dto.OrderRequest;
 import br.com.bluesburger.invoice.application.sqs.commands.CancelInvoiceCommand;
 import br.com.bluesburger.invoice.application.sqs.commands.IssueInvoiceCommand;
 import br.com.bluesburger.invoice.application.sqs.events.InvoiceIssueEvent;

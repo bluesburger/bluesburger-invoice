@@ -5,7 +5,7 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
-import br.com.bluesburger.invoice.application.dto.order.OrderRequest;
+import br.com.bluesburger.invoice.application.dto.OrderRequest;
 import br.com.bluesburger.invoice.domain.entity.InvoiceStatus;
 import br.com.bluesburger.invoice.domain.service.InvoicePort;
 import br.com.bluesburger.invoice.infra.database.entity.InvoiceEntity;
@@ -24,7 +24,7 @@ public class InvoiceAdapter implements InvoicePort {
 		return invoiceRepository.findAll();
 	}
 	
-	public List<InvoiceEntity> getAllByStep(InvoiceStatus status) {
+	public List<InvoiceEntity> getAllByStatus(InvoiceStatus status) {
 		return invoiceRepository.findAllByStatusOrderByCreatedTime(status);
 	}
 

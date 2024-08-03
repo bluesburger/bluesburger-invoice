@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.bluesburger.invoice.application.dto.order.InvoiceDto;
-import br.com.bluesburger.invoice.application.dto.order.InvoiceMapper;
+import br.com.bluesburger.invoice.application.dto.InvoiceDto;
+import br.com.bluesburger.invoice.application.dto.InvoiceMapper;
 import br.com.bluesburger.invoice.application.sqs.events.InvoiceIssueEvent;
 import br.com.bluesburger.invoice.domain.entity.InvoiceStatus;
 import br.com.bluesburger.invoice.domain.exception.OrderNotFoundException;

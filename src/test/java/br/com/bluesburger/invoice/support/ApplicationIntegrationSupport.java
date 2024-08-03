@@ -10,9 +10,9 @@ import br.com.bluesburger.invoice.BluesBurguerInvoiceApplication;
 @TestPropertySource("classpath:application-test.properties")
 @SpringBootTest(
 		classes = { BluesBurguerInvoiceApplication.class },
-		properties = { 
-				"cloud.aws.credentials.access-key=AKIAIOSFODNN7EXAMPLE",
-				"cloud.aws.credentials.secret-key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",
+		properties = {
+//				"cloud.aws.credentials.access-key=AKIAIOSFODNN7EXAMPLE",
+//				"cloud.aws.credentials.secret-key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",
 				"spring.main.allow-bean-definition-overriding=true",
 				"spring.cloud.bus.enabled=false",
 				"spring.cloud.consul.enabled=false", 

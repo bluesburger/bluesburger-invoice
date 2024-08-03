@@ -1,4 +1,4 @@
-package br.com.bluesburger.invoice.application.dto.order;
+package br.com.bluesburger.invoice.application.dto;
 
 import java.io.Serializable;
 
